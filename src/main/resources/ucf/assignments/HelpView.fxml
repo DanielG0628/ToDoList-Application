@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="455.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoController">
+   <children>
+      <Label alignment="CENTER" prefHeight="48.0" prefWidth="692.0" text="Help Menu">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <TextArea editable="false" layoutX="7.0" layoutY="48.0" prefHeight="403.0" prefWidth="677.0" text="How to add an item: Write the date in gregorian format (YYYY-MM-DD) and the description of the item &#10;(must be 1 - 256 characters), then press the add button. Whenever a new item is added, it will automatically be marked as&#10;incomplete.&#10;How to remove an item: Write the number of the item within the text box located next to the edit button and then&#10;press the remove button.&#10;How to edit an tiem: Write the date in gregorian format (YYYY-MM-DD), the description of the item &#10;(must be 1 - 256 characters), and the number of the item you want to edit, then press the edit button. Whenever a item is&#10;edited, it will automatically be marked as incomplete.&#10;How to clear the list: Press the clear button to completely clear the list.&#10;How to mark an item as complete or incomplete: As previously stated, an item is automatically marked as incomplete&#10;when it is added or edited. To swtich between incomplete or complete, simply put the number of the item in the text field &#10;located next to the complete or incomplete button and then press the complete or incomplete button.&#10;How to view all completed or incomplete items: Press the corresponding buttons to fill the list below with either the &#10;completed or incomplete items.&#10;How to save all items in the list: Press the save button in the top right and your items will be saved to external storage.&#10;How to load a list: Press the load button in the top right and a new list will be created from a list from external storage." />
+   </children>
+</AnchorPane>

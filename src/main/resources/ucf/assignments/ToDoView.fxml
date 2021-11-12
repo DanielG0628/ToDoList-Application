@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="451.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoController">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="807.0" text="To Do List - By Daniel Guzman">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="15.0" layoutY="48.0" prefHeight="214.0" prefWidth="777.0" />
+      <TextField fx:id="yearText" layoutX="14.0" layoutY="280.0" promptText="YYYY-MM-DD" />
+      <TextField fx:id="descriptionText" layoutX="176.0" layoutY="280.0" prefHeight="18.0" prefWidth="617.0" promptText="Enter description here..." />
+      <Button fx:id="addButton" layoutX="23.0" layoutY="324.0" mnemonicParsing="false" onAction="#addItem" prefHeight="25.0" prefWidth="59.0" text="Add" />
+      <Button fx:id="removeButton" layoutX="257.0" layoutY="324.0" mnemonicParsing="false" onAction="#removeItem" text="Remove" />
+      <Button fx:id="clearButton" layoutX="89.0" layoutY="324.0" mnemonicParsing="false" onAction="#clearList" prefHeight="25.0" prefWidth="59.0" text="Clear" />
+      <Button fx:id="editButton" layoutX="323.0" layoutY="324.0" mnemonicParsing="false" onAction="#editItem" prefHeight="25.0" prefWidth="59.0" text="Edit" />
+      <Button fx:id="completeOrIncompleteButton" layoutX="556.0" layoutY="324.0" mnemonicParsing="false" onAction="#completedOrIncompleteItem" text="Complete or Incomplete" />
+      <Button fx:id="showIncompleteButton" layoutX="441.0" layoutY="403.0" mnemonicParsing="false" onAction="#showIncomplete" text="Show Incomplete" />
+      <Button fx:id="showCompleteButton" layoutX="332.0" layoutY="403.0" mnemonicParsing="false" onAction="#showCompleted" text="Show Complete" />
+      <Button fx:id="saveButton" layoutX="701.0" layoutY="-5.0" mnemonicParsing="false" onAction="#saveList" prefHeight="32.0" prefWidth="52.0" text="Save" />
+      <Button fx:id="loadButton" layoutX="755.0" layoutY="-5.0" mnemonicParsing="false" onAction="#loadList" prefHeight="32.0" prefWidth="52.0" text="Load" />
+      <TextField fx:id="completeOrIncompleteText" layoutX="709.0" layoutY="324.0" prefHeight="25.0" prefWidth="59.0" promptText="Item #" />
+      <TextField fx:id="removeOrEditText" layoutX="390.0" layoutY="324.0" prefHeight="25.0" prefWidth="59.0" promptText="Item #" />
+      <Button fx:id="helpButton" layoutX="-3.0" layoutY="-5.0" mnemonicParsing="false" onAction="#help" prefHeight="32.0" prefWidth="52.0" text="Help" />
+      <Button fx:id="showExisting" layoutX="223.0" layoutY="403.0" mnemonicParsing="false" onAction="#showExisting" prefHeight="25.0" prefWidth="100.0" text="Show Existing" />
+   </children>
+</AnchorPane>
